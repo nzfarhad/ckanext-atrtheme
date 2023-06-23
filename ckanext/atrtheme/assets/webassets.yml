@@ -1,0 +1,14 @@
+# atrtheme-js:
+#   filter: rjsmin
+#   output: ckanext-atrtheme/%(version)s-atrtheme.js
+#   contents:
+#     - js/atrtheme.js
+#   extra:
+#     preload:
+#       - base/main
+
+# atrtheme-css:
+#   filter: cssrewrite
+#   output: ckanext-atrtheme/%(version)s-atrtheme.css
+#   contents:
+#     - css/atrtheme.css
