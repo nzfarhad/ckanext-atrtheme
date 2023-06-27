@@ -1,0 +1,27 @@
+
+
+<div class="module-promotion card box">
+  <div>
+    {% if intro %}
+      {{ h.render_markdown(intro) }}
+    {% else %}
+      <h1 class="page-heading">{{ _("Welcome to ATR Resource Center") }}</h1>
+      <p>
+        {% trans %}Welcome to the resource center of ATR. This is where you can find data, analysis inception report, methodology and final reports related to our projects. 
+        You can use this site to store and access these documents easily and securely.
+        {% endtrans %}
+      </p>
+    {% endif %}
+  </div>
+
+  {% block home_image %}
+    <section class="featured media-overlay hidden-xs">
+      
+      {% block home_image_content %}
+        <a class="media-image" href="#">
+          <img class="img-fluid" src="{{ h.url_for_static('/base/images/placeholder-420x220.png') }}" alt="Placeholder" />
+        </a>
+      {% endblock %}
+    </section>
+  {% endblock %}
+</div>

@@ -13,3 +13,6 @@ class AtrthemePlugin(plugins.SingletonPlugin):
         toolkit.add_template_directory(config, 'templates')
         #toolkit.add_public_directory(config, 'public')
         #toolkit.add_resource('public', 'ckanext-atrtheme')
+
+# hide social media links
+

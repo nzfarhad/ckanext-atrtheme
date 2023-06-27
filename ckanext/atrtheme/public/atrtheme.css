@@ -1,0 +1,175 @@
+:root {
+    --bs-blue: #206b82;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #d9534f;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #fd7e14;
+    --bs-green: #3A833A;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #333333;
+    --bs-primary: #206b82;
+    --bs-secondary: #6c757d;
+    --bs-success: #3A833A;
+    --bs-info: #0dcaf0;
+    --bs-warning: #fd7e14;
+    --bs-danger: #d43f3a;
+    --bs-light: #fff;
+    --bs-dark: #333333;
+    --bs-primary-rgb: 32, 107, 130;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 58, 131, 58;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 253, 126, 20;
+    --bs-danger-rgb: 212, 63, 58;
+    --bs-light-rgb: 255, 255, 255;
+    --bs-dark-rgb: 51, 51, 51;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 51, 51, 51;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --bs-font-monospace: SFMono-Regular, Menlo, fMonaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(194, 20, 20, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 0.875rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #333333;
+
+
+
+/* =====================================================
+   The "account masthead" bar across the top of the site
+   ===================================================== */
+   .masthead .navbar .logo img {
+    max-height: 60px;
+    filter: brightness(0) invert(1) grayscale(1);
+}
+
+
+   .account-masthead {
+    background-color: rgb(40, 40, 40);
+}
+/* The "bubble" containing the number of new notifications. */
+.account-masthead .account .notifications a span {
+  background-color: black;
+}
+/* The text and icons in the user account info. */
+.account-masthead .account ul li a {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* The user account info text and icons, when the user's pointer is hovering
+   over them. */
+.account-masthead .account ul li a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: black;
+}
+
+
+/* ========================================================================
+   The main masthead bar that contains the site logo, nav links, and search
+   ======================================================================== */
+
+.masthead {
+  background-color: #3d3d3d;
+}
+/* The "navigation pills" in the masthead (the links to Datasets,
+   Organizations, etc) when the user's pointer hovers over them. */
+.masthead .navigation .nav-pills li a:hover {
+  background-color: rgb(48, 48, 48);
+  color: white;
+}
+/* The "active" navigation pill (for example, when you're on the /dataset page
+   the "Datasets" link is active). */
+.masthead .navigation .nav-pills li.active a {
+  background-color: rgb(74, 74, 74);
+}
+/* The "box shadow" effect that appears around the search box when it
+   has the keyboard cursor's focus. */
+.masthead input[type="text"]:focus {
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+
+/* ===========================================
+   The content in the middle of the front page
+   =========================================== */
+
+/* Remove the "box shadow" effect around various boxes on the page. */
+.box {
+  box-shadow: none;
+}
+/* Remove the borders around the "Welcome to CKAN" and "Search Your Data"
+   boxes. */
+.hero .box {
+  border: none;
+}
+/* Change the colors of the "Search Your Data" box. */
+.homepage .module-search .module-content {
+  color: rgb(68, 68, 68);
+  background-color: white;
+}
+/* Change the background color of the "Popular Tags" box. */
+.homepage .module-search .tags {
+  background-color: rgb(61, 61, 61);
+}
+/* Remove some padding. This makes the bottom edges of the "Welcome to CKAN"
+   and "Search Your Data" boxes line up. */
+.module-content:last-child {
+  padding-bottom: 0px;
+}
+.homepage .module-search {
+  padding: 0px;
+}
+/* Add a border line between the top and bottom halves of the front page. */
+.homepage [role="main"] {
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+
+/* ====================================
+   The footer at the bottom of the site
+   ==================================== */
+
+.site-footer {
+  background-color: rgb(40, 40, 40);
+}
+/* The text in the footer. */
+.site-footer,
+.site-footer label,
+.site-footer small {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* The link texts in the footer. */
+.site-footer a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ====================================
+   Flash Messages
+   ==================================== */
+
+.flash-messages .alert {
+    box-shadow: 0 0 0 1px white;
+}
+
+.alert-info {
+    color: #ffffff;
+    background-color: #ED8600;
+    border-color: #ED8600;
+}
