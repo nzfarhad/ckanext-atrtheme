@@ -1,0 +1,24 @@
+{% ckan_extends %}
+
+{# Override organization labels to use "Project" instead #}
+{% block heading %}
+  {% if organization.state == 'deleted' %}
+    <span class="banner">{{ _('Deleted') }}</span>
+  {% endif %}
+  {{ _('Project:') }} {{ organization.title or organization.name }}
+{% endblock %}
+
+{% block heading_private %}
+  {% if organization.private %}
+    <span class="banner">{{ _('Private') }}</span>
+  {% endif %}
+{% endblock %}
+
+{% block description %}
+  {% if organization.description %}
+    <p>
+      {{ h.markdown_extract(organization.description, 180) }}
+      {% link_for _('read more'), named_route='organization.about', id=organization.name %}
+    </p>
+  {% endif %}
+{% endblock %} 
